@@ -1,13 +1,14 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-#define MONTH 12;
-#define YEAR 5;
+#define MONTHS 12
+#define YEARS 5
 
 int main ()
 {
     //Hard coded values in 2D array 
     //Data from Texas from 2015/2019
-    float rainfall[5][12] = {
+    float rainfall[YEARS][MONTHS] = {
                                 {6.05, 2.71, 9.66, 6.93, 13.99, 6.42, 0.13, 4.81, 0.65, 7.64, 10.05, 8.33},
                                 {1.78, 2.64, 11.38, 2.63, 5.30, 0.22, 0.23, 9.62, 2.40, 1.14, 3.22, 4.12},
                                 {5.58, 3.09, 2.72, 4.39, 5.87, 5.55, 2.86, 7.17, 0.61, 2.11, 1.53, 7.21},
@@ -15,6 +16,19 @@ int main ()
                                 {3.34, 2.17, 2.44, 9.88, 9.87, 7.12, 0.73, 1.07, 3.60, 4.05, 0.53, 1.13}
                             };
 
+    float yearlyAverage, monthlyAverage;
+
+    //Count total for each year
+    for (int i = 0; i < 5; i++)
+    {
+
+        for (int j = 0; j < 12; j++)
+        {
+            /* code */
+        }
+        
+    }
+    
 
 
     printf("First commit.\n");
