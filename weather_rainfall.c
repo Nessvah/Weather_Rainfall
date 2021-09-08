@@ -16,7 +16,10 @@ int main ()
                                 {3.34, 2.17, 2.44, 9.88, 9.87, 7.12, 0.73, 1.07, 3.60, 4.05, 0.53, 1.13}
                             };
 
-    float yearlyAverage, monthlyAverage;
+    int year, month;
+    float subtotal, total;
+
+    printf("YEAR\t\tRAINFALL  (inches)\n");
 
     //Count total for each year
     for (int i = 0; i < 5; i++)
