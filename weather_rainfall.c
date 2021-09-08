@@ -22,18 +22,15 @@ int main ()
     printf("YEAR\t\tRAINFALL  (inches)\n");
 
     //Count total for each year
-    for (int i = 0; i < 5; i++)
+    for (year = 0, total = 0; year < YEARS; year++)
     {
 
-        for (int j = 0; j < 12; j++)
+        for (month = 0, subtotal = 0; month < MONTHS; month++)
         {
-            /* code */
+            subtotal += rainfall[year][month];
         }
-        
+        printf("%5d \t\t%15.1f\n", 2015 + year, subtotal);
+        total += subtotal;
     }
-    
 
-
-    printf("First commit.\n");
-    return 0;
 }
